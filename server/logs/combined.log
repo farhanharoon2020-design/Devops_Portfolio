@@ -1,0 +1,323 @@
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-28 19:13:56"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-28 19:35:30"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-05-28 19:36:35"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-28 19:42:33"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-29 00:30:22"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-05-29 01:07:11"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-29 01:07:23"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-05-29 01:08:13"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-29 01:08:17"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-05-29 01:08:53"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-29 01:16:36"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-29 01:19:16"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-29 01:19:16"}
+{"err":"ENOENT: no such file or directory, rename 'C:\\web dev\\Devops_Portfolio\\server\\data\\analytics.json.tmp' -> 'C:\\web dev\\Devops_Portfolio\\server\\data\\analytics.json'","level":"error","message":"Analytics write error","timestamp":"2026-05-29 02:45:30"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-05-29 02:45:30"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-05-29 02:45:57"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 13:54:15"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 13:56:07"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:09:56"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:10:36"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:11:02"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:12:27"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:14:10"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:44:07"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:47:00"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:47:27"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:47:32"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:47:49"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:49:25"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 14:49:46"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 14:49:51"}
+{"email":"farhanharoon5656@gmail.com","id":"1d2b8db3-0264-435c-85c7-669b5f216bc2","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-16 14:51:39"}
+{"email":"farhanharoon5656@gmail.com","id":"83f9d624-9f5f-4aaf-9de6-ff205e35c682","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-16 15:01:03"}
+{"email":"farhanharoon2005@gmail.com","id":"509a3678-b05a-4718-81f8-af8bb5266b35","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-16 15:02:09"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 15:04:54"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 15:08:37"}
+{"email":"farhanharoon5656@gmail.com","id":"2377fa13-022d-4e63-8eb5-185c603006a5","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-16 15:09:00"}
+{"email":"farhanharoon5656@gmail.com","id":"2b5f2216-91d7-4e1b-9e41-541805184c1e","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-16 15:10:26"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 15:16:55"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 15:18:29"}
+{"email":"farhanharoon5656@gmail.com","id":"53d0da00-2796-4616-bc89-6bf48ca54dc4","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-16 15:18:59"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 15:28:46"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 15:30:27"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 15:42:18"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 16:07:44"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 16:19:24"}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-16 16:21:10"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 16:21:15"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 16:58:45"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 17:17:49"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 17:29:01"}
+{"level":"error","message":"GitHub API error","msg":"read ECONNRESET","timestamp":"2026-06-16 20:01:25"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 23:27:03"}
+{"email":"mairaharoon72@gmail.com","id":"6b476fa7-a4c8-403e-a239-c35641c15ea9","level":"info","message":"Contact form submission","name":"Maira","timestamp":"2026-06-16 23:29:04"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-16 23:48:25"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 00:02:51"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 00:13:35"}
+{"level":"info","message":"Project view logged","project":"devops-portfolio","timestamp":"2026-06-17 00:16:44","total":1}
+{"email":"farhanharoon5656@gmail.com","id":"2cbe5ac8-25a6-4592-afc8-7cd0bf6ccfb9","level":"info","message":"Contact form submission","name":"Farhan Haroon","timestamp":"2026-06-17 00:17:14"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 00:55:42"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 01:10:54"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 13:52:40"}
+{"level":"info","message":"Project view logged","project":"bash-automation","timestamp":"2026-06-17 13:53:36","total":1}
+{"level":"info","message":"Project view logged","project":"bash-automation","timestamp":"2026-06-17 13:53:58","total":2}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 14:04:31"}
+{"level":"info","message":"Project view logged","project":"bash-automation","timestamp":"2026-06-17 14:05:18","total":3}
+{"level":"info","message":"🚀 DevOps Portfolio API v2.0.0 — http://localhost:5000","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   Health  : http://localhost:5000/health","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   Status  : http://localhost:5000/api/status","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   Blog    : http://localhost:5000/api/blog","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   GitHub  : http://localhost:5000/api/github/stats","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   Admin   : http://localhost:5000/api/admin/stats  [X-Admin-Key]","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   SMTP    : ✅ Configured","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   GitHub  : ⚠️  No token (60 req/hr limit)","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"   Admin   : ✅ Secured","timestamp":"2026-06-17 14:13:10"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 14:16:14"}
+{"level":"info","message":"Project view logged","project":"bash-automation","timestamp":"2026-06-17 14:16:39","total":4}
+{"level":"info","message":"Project view logged","project":"bash-automation","timestamp":"2026-06-17 14:19:42","total":5}
+{"level":"info","message":"Project view logged","project":"devops-portfolio","timestamp":"2026-06-17 14:19:51","total":2}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 14:29:49"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 14:43:10"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 14:53:47"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 17:44:16"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 17:55:44"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 18:16:31"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 19:23:48"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 19:37:17"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 19:49:33"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 20:22:33"}
+{"level":"info","message":"GitHub stats fetched and cached","timestamp":"2026-06-17 23:11:50"}

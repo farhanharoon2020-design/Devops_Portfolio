@@ -1,0 +1,621 @@
+/* ─── Hero Section ─────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(ellipse 120% 80% at 50% 110%, #001033 0%, #000510 40%, #000000 100%);
+}
+
+/* Three.js canvas fills the background */
+.hero__three-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+
+/* ── Arc orbit icons ──────────────────────────────────────── */
+.hero__orbit {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.orbit-icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  transform: translate(-50%, -50%);
+  animation: float 3.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 8px rgba(0, 170, 255, 0.6));
+}
+
+.orbit-icon:nth-child(1) { animation-delay: 0s; }
+.orbit-icon:nth-child(2) { animation-delay: -0.5s; }
+.orbit-icon:nth-child(3) { animation-delay: -1s; }
+.orbit-icon:nth-child(4) { animation-delay: -1.5s; }
+.orbit-icon:nth-child(5) { animation-delay: -2s; }
+.orbit-icon:nth-child(6) { animation-delay: -2.5s; }
+.orbit-icon:nth-child(7) { animation-delay: -3s; }
+.orbit-icon:nth-child(8) { animation-delay: -3.5s; }
+
+.orbit-icon__emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.orbit-icon__label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px #00aaff;
+  white-space: nowrap;
+}
+
+/* ── Main content layout ────────────────────────────────────── */
+.hero__content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* This centers everything vertically */
+  padding: 0 8%; /* Removed unbalanced top/bottom padding for true vertical centering */
+  min-height: 100vh;
+  gap: 5rem;
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+/* ── Text side ────────────────────────────────────────────── */
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Reverted to professional spacing */
+  flex: 1;
+  max-width: 750px;
+}
+
+/* "Hello, I'm" */
+.hero__greeting {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(220, 240, 255, 0.75);
+  letter-spacing: 0.04em;
+}
+
+/* FARHAN HAROON — the hero name, huge & bold */
+.hero__name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(3.8rem, 9vw, 7.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.name--white {
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(255,255,255,0.15);
+}
+
+.name--blue {
+  color: #00aaff;
+  text-shadow: 0 0 25px rgba(0, 170, 255, 0.6), 0 0 60px rgba(0, 102, 255, 0.3);
+}
+
+/* Subtitle */
+.hero__subtitle {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.55rem);
+  font-weight: 500;
+  color: rgba(180, 210, 240, 0.85);
+  letter-spacing: 0.04em;
+  margin-top: -0.3rem;
+}
+
+/* Value Proposition */
+.hero__value-prop {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  color: rgba(200, 220, 255, 0.8);
+  max-width: 550px;
+  line-height: 1.6;
+  margin-top: -0.2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Typewriter block */
+.hero__typewriter {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.78rem, 1.6vw, 1rem);
+  color: #00ffcc;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-height: 1.6em;
+}
+
+.typewriter__bracket {
+  color: #0066ff;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+.typewriter__text { color: #00ffcc; }
+
+.typewriter__cursor {
+  color: #00ffcc;
+  animation: typewriterBlink 1s infinite;
+  margin-left: 2px;
+}
+
+.typewriter__cursor--off { opacity: 0; }
+
+/* CTA Buttons — pill-shaped like old portfolio */
+.hero__cta {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+
+.hero__btn--primary {
+  background: #00aaff;
+  border: 2px solid #00aaff;
+  color: #000;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15rem; /* Professional size */
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 1rem 3rem; /* Balanced padding */
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.4), 0 4px 20px rgba(0,0,0,0.4);
+  text-transform: none;
+}
+
+.hero__btn--primary:hover {
+  background: #33bbff;
+  border-color: #33bbff;
+  box-shadow: 0 0 40px rgba(0, 170, 255, 0.7), 0 8px 30px rgba(0,0,0,0.5);
+  transform: translateY(-3px) scale(1.03);
+  color: #000;
+}
+
+.hero__btn--outline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.15rem; /* Professional size */
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 1rem 3rem; /* Balanced padding */
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.hero__btn--outline:hover {
+  border-color: #00aaff;
+  color: #00aaff;
+  box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Status */
+.hero__status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.status__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #00ff88;
+  box-shadow: 0 0 8px #00ff88, 0 0 16px #00ff8880;
+  animation: pulseGlow 2s infinite;
+}
+
+.status__text {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: rgba(100, 180, 140, 0.8);
+  letter-spacing: 0.06em;
+}
+
+/* ── Photo side ─────────────────────────────────────────── */
+.hero__photo-side {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero__photo-frame {
+  position: relative;
+  width: clamp(300px, 28vw, 390px); /* Responsive width, increased slightly per user request */
+  aspect-ratio: 3 / 4;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #001530, #002060);
+  border: 1px solid rgba(0, 150, 255, 0.5); /* Thinner border for professional look */
+  box-shadow:
+    0 0 30px rgba(0, 100, 255, 0.2),
+    0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* If user adds a real photo */
+.hero__photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border-radius: 22px;
+  /* Scale the image slightly and shift to crop out the Gemini watermark in the bottom right corner */
+  transform: scale(1.08) translate(-1%, 2%);
+}
+
+/* Placeholder initials */
+.photo__initials-big {
+  font-family: 'Orbitron', monospace;
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, #0066ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 20px rgba(0, 100, 255, 0.5));
+  letter-spacing: 0.12em;
+  user-select: none;
+}
+
+/* Scan line sweep effect */
+.photo__scan-line {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(0, 200, 255, 0.6), transparent);
+  animation: scanLine 3s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scanLine {
+  0%   { top: 0%;   opacity: 0.8; }
+  50%  { opacity: 0.4; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* Corner decorations on photo frame */
+.hero__photo-frame::before,
+.hero__photo-frame::after {
+  content: '';
+  position: absolute;
+  width: 20px; height: 20px;
+  border-color: #00aaff;
+  border-style: solid;
+  opacity: 0.8;
+}
+.hero__photo-frame::before {
+  top: 8px; left: 8px;
+  border-width: 2px 0 0 2px;
+  border-radius: 4px 0 0 0;
+}
+.hero__photo-frame::after {
+  bottom: 8px; right: 8px;
+  border-width: 0 2px 2px 0;
+  border-radius: 0 0 4px 0;
+}
+
+/* Glow behind the photo */
+.hero__photo-glow {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 100, 255, 0.15) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ── Scroll hint ──────────────────────────────────────────── */
+.hero__scroll-hint {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(100, 160, 210, 0.5);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  z-index: 5;
+  animation: float 2.5s ease infinite;
+}
+
+.scroll__mouse {
+  width: 20px; height: 32px;
+  border: 2px solid rgba(0, 100, 200, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.scroll__wheel {
+  width: 3px; height: 6px;
+  background: #00aaff;
+  border-radius: 2px;
+  animation: scrollWheel 1.5s ease infinite;
+}
+
+@keyframes scrollWheel {
+  0%   { transform: translateY(0);  opacity: 1; }
+  100% { transform: translateY(10px); opacity: 0; }
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .orbit-icon  { display: none; }
+}
+
+@media (max-width: 820px) {
+  .hero__content {
+    flex-direction: column;
+    padding: 6rem 1.5rem 3rem;
+    text-align: center;
+    gap: 3rem;
+  }
+  .hero__text { max-width: 100%; }
+  .hero__photo-side { order: -1; justify-content: center; }
+  .hero__name      { white-space: normal; }
+  .hero__cta       { justify-content: center; }
+  .hero__status    { justify-content: center; }
+  .hero__typewriter { justify-content: center; }
+  .hero__photo-frame { width: 100%; max-width: 320px; aspect-ratio: 1; }
+  .photo__initials-big { font-size: 5rem; }
+  .hero__gh-stats  { justify-content: center; }
+}
+
+/* ── GitHub Stats Badges ─────────────────────────────────── */
+.hero__gh-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 4px 0 2px;
+}
+
+.gh-stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0,102,255,0.1);
+  border: 1px solid rgba(0,102,255,0.25);
+  border-radius: 30px;
+  padding: 5px 13px;
+  font-size: 0.8rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.gh-stat-badge:hover {
+  background: rgba(0,102,255,0.2);
+  border-color: #0066ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,102,255,0.2);
+}
+.gh-stat-icon  { font-size: 0.85rem; }
+.gh-stat-value { font-weight: 700; color: #60a5fa; }
+.gh-stat-label { color: rgba(255,255,255,0.45); font-size: 0.72rem; }
+
+/* ── Project view count ─────────────────────────────────── */
+.project-card__views {
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.35);
+  margin-top: -6px;
+}
+.modal-views-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+/* ── Open to Work Badge ─────────────────────────────────── */
+.hero__open-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(0, 255, 100, 0.08);
+  border: 1px solid rgba(0, 255, 100, 0.3);
+  border-radius: 999px;
+  margin-bottom: 1.2rem;
+  width: fit-content;
+}
+
+.open-badge__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #00ff64;
+  box-shadow: 0 0 8px #00ff64, 0 0 16px #00ff6480;
+  animation: badgePulse 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 6px #00ff64, 0 0 12px #00ff6480; transform: scale(1); }
+  50%       { box-shadow: 0 0 14px #00ff64, 0 0 28px #00ff6460; transform: scale(1.2); }
+}
+
+.open-badge__text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #00ff64;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Stats Counter ──────────────────────────────────────── */
+.hero__stats {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.2rem 1.6rem;
+  background: rgba(0, 102, 255, 0.06);
+  border: 1px solid rgba(0, 170, 255, 0.15);
+  border-radius: 14px;
+  width: fit-content;
+  backdrop-filter: blur(8px);
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.4rem;
+  gap: 4px;
+}
+
+.stat__number {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00aaff;
+  line-height: 1;
+  text-shadow: 0 0 20px #00aaff60;
+}
+
+.stat__plus {
+  font-size: 1.1rem;
+  color: #0066ff;
+}
+
+.stat__label {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #4a7fa5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.hero__stat-divider {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, rgba(0,170,255,0.3), transparent);
+}
+
+/* ── Mobile Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero__content        { flex-direction: column; text-align: center; gap: 2rem; }
+  .hero__text           { align-items: center; }
+  .hero__open-badge     { align-self: center; }
+  .hero__stats          { flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 1rem; }
+  .hero__stat           { padding: 0 1rem; }
+  .hero__stat-divider   { display: none; }
+  .stat__number         { font-size: 1.4rem; }
+  .hero__cta            { flex-direction: column; align-items: center; }
+  .hero__photo-frame    { width: 180px; height: 180px; }
+}
+
+/* ── Floating Tool Badges ────────────────────────────────────
+   Layer sits between the Three.js canvas (z:0) and the text
+   content (z:5). Photo side gets z:6 so it always wins.
+   ALL positions use left ≤ 48 % — safe distance from:
+     • the photo frame  (starts at ~60 % from left on desktop)
+     • the contact btn  (fixed, bottom-right corner)          */
+
+.hero__photo-side { z-index: 6; }   /* above badges, below nothing */
+
+.hero__tool-badges {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.tool-badge {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: rgba(0, 8, 24, 0.72);
+  border: 1px solid color-mix(in srgb, var(--tool-color) 40%, transparent);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 18px color-mix(in srgb, var(--tool-color) 18%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  animation: toolFloat 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--tool-color) 35%, transparent));
+}
+
+/* Five badges spread across the LEFT half — staggered delays */
+.tool-badge--0 { top:  8%; left:  2%; animation-delay:  0.0s; animation-duration: 5.2s; } /* Docker  */
+.tool-badge--1 { top: 20%; left: 44%; animation-delay: -1.4s; animation-duration: 4.6s; } /* AWS     */
+.tool-badge--2 { top: 68%; left:  3%; animation-delay: -2.7s; animation-duration: 5.8s; } /* Linux   */
+.tool-badge--3 { top: 42%; left: 38%; animation-delay: -0.9s; animation-duration: 4.9s; } /* K8s     */
+.tool-badge--4 { top: 78%; left: 26%; animation-delay: -3.6s; animation-duration: 5.4s; } /* Git     */
+
+@keyframes toolFloat {
+  0%, 100% { transform: translateY(0)   rotate(-1deg); }
+  50%       { transform: translateY(-14px) rotate(1deg); }
+}
+
+.tool-badge__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  filter: drop-shadow(0 0 4px currentColor);
+}
+
+.tool-badge__label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  color: color-mix(in srgb, var(--tool-color) 85%, #fff);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Hide badges on tablets / mobiles where layout collapses */
+@media (max-width: 1024px) {
+  .hero__tool-badges { display: none; }
+}
+

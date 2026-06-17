@@ -1,0 +1,175 @@
+/* About Section */
+.about {
+  background: linear-gradient(180deg, transparent, rgba(0,30,60,0.3), transparent);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Bio */
+.about__bio {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  color: #8ab8d4;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+
+.text-highlight {
+  color: #00aaff;
+  font-weight: 600;
+}
+
+/* Education card */
+.education-card {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.4rem;
+  margin-bottom: 2rem;
+  animation: borderGlow 4s ease infinite;
+}
+
+.edu-card__icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.edu-card__degree {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e8f4ff;
+  margin-bottom: 0.2rem;
+}
+
+.edu-card__school {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  color: #6ab0d4;
+  margin-bottom: 0.5rem;
+}
+
+.edu-card__status {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: #00aaff;
+  border: 1px solid #00aaff40;
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(0,170,255,0.08);
+}
+
+/* Badges */
+.about__badges {}
+
+.badges__label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: #4a7fa5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.badges__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* Terminal */
+.terminal {
+  border-color: rgba(0, 170, 255, 0.3);
+  overflow: hidden;
+}
+
+.terminal__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0,170,255,0.15);
+}
+
+.terminal__dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.dot--red    { background: #ff5f57; }
+.dot--yellow { background: #ffbd2e; }
+.dot--green  { background: #28c940; }
+
+.terminal__title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: #4a7fa5;
+  letter-spacing: 0.06em;
+}
+
+.terminal__body {
+  padding: 1.2rem;
+  min-height: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0066ff20 transparent;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+.terminal__line {
+  display: flex;
+  gap: 0.3rem;
+  animation: fadeInLeft 0.3s ease;
+}
+
+.terminal__line--output {
+  padding-left: 1rem;
+}
+
+.terminal__prompt {
+  color: #0066ff;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.terminal__text {
+  color: #a0d4f5;
+}
+
+.terminal__line--output .terminal__text {
+  color: #00ffcc;
+}
+
+.terminal__line--cursor .terminal__text {
+  color: #00aaff;
+}
+
+.terminal__blink-cursor {
+  color: #00aaff;
+  animation: typewriterBlink 1s infinite;
+  margin-left: 2px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "categories": [
+    {
+      "name": "Skills & Tools",
+      "icon": "🛠️",
+      "skills": [
+        { "name": "Linux",           "icon": "🐧", "level": 85, "color": "#fcc624" },
+        { "name": "Bash Scripting",  "icon": "💻", "level": 82, "color": "#4eaa25" },
+        { "name": "Git / GitHub",    "icon": "🐙", "level": 88, "color": "#f05033" },
+        { "name": "Networking",      "icon": "🌐", "level": 75, "color": "#00aaff" },
+        { "name": "Docker",          "icon": "🐳", "level": 80, "color": "#2496ed" }
+      ]
+    }
+  ]
+}

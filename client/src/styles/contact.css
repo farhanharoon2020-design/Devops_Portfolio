@@ -1,0 +1,292 @@
+/* Contact Section */
+.contact {
+  background: linear-gradient(180deg, transparent, rgba(0,10,30,0.4));
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Terminal form wrapper */
+.contact__terminal {
+  border-color: rgba(0, 170, 255, 0.25);
+}
+
+/* Terminal header (reuse from about) */
+.terminal__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(0,170,255,0.15);
+}
+
+/* Form */
+.contact__form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: #4a7fa5;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+}
+
+.form-prompt {
+  color: #0066ff;
+  margin-right: 0.4rem;
+  font-weight: 700;
+}
+
+.form-input {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.88rem;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(0, 102, 255, 0.3);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  color: #c8e6ff;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  resize: none;
+}
+
+.form-input::placeholder { color: #2a4a6a; }
+
+.form-input:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 12px #00aaff30, 0 0 24px #0066ff20;
+  background: rgba(0, 20, 60, 0.5);
+}
+
+.form-group--error .form-input {
+  border-color: #ff4466;
+  box-shadow: 0 0 10px #ff446630;
+}
+
+.form-error {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: #ff4466;
+  letter-spacing: 0.05em;
+}
+
+.form-textarea { min-height: 120px; }
+
+/* Submit */
+.contact__submit {
+  width: 100%;
+  justify-content: center;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+}
+
+.btn--loading { opacity: 0.7; pointer-events: none; }
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Feedback */
+.form-feedback {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  letter-spacing: 0.05em;
+  animation: scanIn 0.4s ease;
+}
+
+.form-feedback--success {
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.08);
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  box-shadow: 0 0 15px #00ff8830;
+}
+
+.form-feedback--error {
+  color: #ff4466;
+  background: rgba(255, 68, 102, 0.08);
+  border: 1px solid rgba(255, 68, 102, 0.3);
+  box-shadow: 0 0 15px #ff446630;
+}
+
+/* Info panel — glass card so text is readable over the 3D ball */
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(4, 12, 28, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(0, 170, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.contact__info-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
+}
+
+.contact__info-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: #a8c8e0;
+  line-height: 1.75;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+}
+
+/* Details */
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact__detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem;
+  color: #c0ddf0;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.9);
+  font-weight: 600;
+}
+
+.detail__icon { font-size: 1.1rem; }
+
+/* Socials */
+.socials__label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: #4a7fa5;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.socials__links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(0, 170, 255, 0.3);
+  background: rgba(0, 102, 255, 0.08);
+  color: #a0c8e0;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  border-color: #00aaff;
+  color: #00aaff;
+  background: rgba(0, 170, 255, 0.12);
+  box-shadow: 0 0 15px #00aaff30;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.contact::after {
+  content: '';
+  display: block;
+  margin-top: 6rem;
+}
+
+/* Newsletter subscribe */
+.contact__newsletter {
+  margin-top: 24px;
+  padding: 18px;
+  background: rgba(0,102,255,0.05);
+  border: 1px solid rgba(0,102,255,0.15);
+  border-radius: 12px;
+}
+
+.newsletter__label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #60a5fa;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.newsletter__form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.newsletter__input {
+  flex: 1;
+  min-width: 160px;
+  padding: 0.6rem 0.9rem !important;
+  font-size: 0.82rem !important;
+}
+
+.newsletter__btn {
+  padding: 0.6rem 1rem !important;
+  font-size: 0.8rem !important;
+  white-space: nowrap;
+}
+
+.news-fb {
+  margin-top: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.news-fb--ok   { color: #22c55e; background: rgba(34,197,94,0.08);  border: 1px solid rgba(34,197,94,0.2); }
+.news-fb--warn { color: #eab308; background: rgba(234,179,8,0.08); border: 1px solid rgba(234,179,8,0.2); }
+.news-fb--err  { color: #ef4444; background: rgba(239,68,68,0.08);  border: 1px solid rgba(239,68,68,0.2); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .social-btn { cursor: auto; }
+  .newsletter__form { flex-direction: column; }
+}

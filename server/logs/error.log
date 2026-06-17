@@ -1,0 +1,2 @@
+{"err":"ENOENT: no such file or directory, rename 'C:\\web dev\\Devops_Portfolio\\server\\data\\analytics.json.tmp' -> 'C:\\web dev\\Devops_Portfolio\\server\\data\\analytics.json'","level":"error","message":"Analytics write error","timestamp":"2026-05-29 02:45:30"}
+{"level":"error","message":"GitHub API error","msg":"read ECONNRESET","timestamp":"2026-06-16 20:01:25"}
