@@ -5,6 +5,11 @@
  */
 
 const nodemailer = require('nodemailer');
+const dns = require('dns');
+
+// Force Node.js to resolve DNS to IPv4 addresses first.
+// This prevents IPv6 connection hangs (common on cloud servers like Railway/Render).
+dns.setDefaultResultOrder('ipv4first');
 
 const transporter = nodemailer.createTransport({
   host:   'smtp.gmail.com',
@@ -14,6 +19,9 @@ const transporter = nodemailer.createTransport({
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
   },
+  connectionTimeout: 15000, // 15 seconds
+  greetingTimeout: 15000,
+  socketTimeout: 15000,
 });
 
 const FROM     = `"Farhan Haroon" <${process.env.SMTP_USER}>`;
