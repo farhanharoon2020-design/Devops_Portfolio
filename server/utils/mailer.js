@@ -19,6 +19,10 @@ const transporter = nodemailer.createTransport({
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
   },
+  // Force IPv4 resolution inside nodemailer to bypass IPv6 connection hangs/unreachability
+  lookup: (hostname, options, callback) => {
+    dns.lookup(hostname, { family: 4 }, callback);
+  },
   connectionTimeout: 15000, // 15 seconds
   greetingTimeout: 15000,
   socketTimeout: 15000,
