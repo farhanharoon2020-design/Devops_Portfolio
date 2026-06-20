@@ -191,7 +191,7 @@ export default function Contact() {
               <p className="socials__label">Find me on:</p>
               <div className="socials__links">
                 <a
-                  href="https://github.com/farhanharoon"
+                  href="https://github.com/farhanharoon2020-design"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-btn"
