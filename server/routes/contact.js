@@ -55,21 +55,19 @@ router.post('/', contactLimiter, rules, async (req, res) => {
     logger.error('Failed to log contact submission', { err: err.message });
   }
 
-  // Send emails
+  // Send emails (runs in the background, doesn't block success response if it fails)
   try {
     await sendContactEmails({ name, email, message });
-    logger.info('Contact form submission', { id, name, email });
-    return res.json({
-      success: true,
-      id,
-      message: 'Message received! I\'ll get back to you shortly.',
-    });
+    logger.info('Contact send email success', { id, name, email });
   } catch (err) {
-    logger.error('Email send failed', { err: err.message });
-    return res.status(500).json({
-      error: 'Failed to send email. Your message was saved — I\'ll follow up.',
-    });
+    logger.error('Email send failed but message was saved', { err: err.message });
   }
+
+  return res.json({
+    success: true,
+    id,
+    message: "Message received! I'll get back to you shortly.",
+  });
 });
 
 module.exports = router;
