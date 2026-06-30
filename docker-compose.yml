@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+
+  server:
+    build: ./server
+    image: server_image
+    container_name: server_cont
+    restart: always
+    env_file:
+      - ./server/.env
+    networks:
+      - "portfolio-nw"
+    volumes:
+      - ./server/data:/app/data
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:5000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3 
+  
+
+  client:
+    build: ./client
+    image: client_image
+    container_name: client_cont
+    ports:
+      - "80:80"
+    restart: always 
+    networks:
+      - "portfolio-nw"
+    depends_on:
+      server:
+        condition: service_healthy
+
+
+networks:
+  portfolio-nw:  
