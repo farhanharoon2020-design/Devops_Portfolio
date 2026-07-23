@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import Lenis from 'lenis';
 import './styles/global.css';
+import { ScrollTrigger } from './lib/gsap';
 
 import Loader          from './components/Loader';
 import CustomCursor    from './components/CustomCursor';
@@ -23,7 +24,7 @@ function trackVisit(page) {
   }).catch(() => {}); // silent — never breaks the UI
 }
 
-function Portfolio() {
+function Portfolio({ appReady }) {
   useScrollReveal();
 
   // Track portfolio visit on mount
@@ -31,7 +32,8 @@ function Portfolio() {
     trackVisit('portfolio-home');
   }, []);
 
-  // Lenis smooth scroll
+  // Lenis smooth scroll — kept in sync with GSAP ScrollTrigger so
+  // scroll-driven heading reveals fire at the correct positions.
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.4,
@@ -39,14 +41,25 @@ function Portfolio() {
       smoothWheel: true,
     });
 
+    // Let ScrollTrigger recompute on every Lenis frame.
+    lenis.on('scroll', ScrollTrigger.update);
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
     const id = requestAnimationFrame(raf);
 
+    // Positions can shift once fonts/late content settle.
+    const refresh = () => ScrollTrigger.refresh();
+    window.addEventListener('load', refresh);
+    const refreshTimer = setTimeout(refresh, 600);
+
     return () => {
       cancelAnimationFrame(id);
+      clearTimeout(refreshTimer);
+      window.removeEventListener('load', refresh);
+      lenis.off('scroll', ScrollTrigger.update);
       lenis.destroy();
     };
   }, []);
@@ -56,7 +69,7 @@ function Portfolio() {
       <ThreeBackground />
       <Navbar />
       <main style={{ position: 'relative', zIndex: 1 }}>
-        <Hero />
+        <Hero appReady={appReady} />
         <About />
         <Skills />
         <Projects />
@@ -97,7 +110,7 @@ export default function App() {
           pointerEvents: loaded ? 'auto' : 'none',
         }}
       >
-        <Portfolio />
+        <Portfolio appReady={loaded} />
       </div>
 
       <FloatingContact />

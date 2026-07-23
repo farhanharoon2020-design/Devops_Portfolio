@@ -20,13 +20,15 @@ export function useScrollReveal() {
       { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
     );
 
-    // Observe all currently existing .reveal elements
+    // Observe all currently existing .reveal / .reveal-scale elements
     const observe = (root = document) => {
-      root.querySelectorAll('.reveal:not(.visible)').forEach(el => io.observe(el));
+      root
+        .querySelectorAll('.reveal:not(.visible), .reveal-scale:not(.visible)')
+        .forEach(el => io.observe(el));
     };
     observe();
 
-    // Watch for new .reveal elements added to the DOM after initial render
+    // Watch for new reveal elements added to the DOM after initial render
     const mo = new MutationObserver(() => observe());
     mo.observe(document.body, { childList: true, subtree: true });
 

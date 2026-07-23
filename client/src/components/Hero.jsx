@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import profileImg from '../assets/farhan.png';
+import { useHeroIntro } from '../hooks/useGsap';
 import '../styles/hero.css';
 
 // Animated counter hook
@@ -198,7 +199,7 @@ function HeroThreeCanvas() {
 }
 
 
-export default function Hero() {
+export default function Hero({ appReady = false }) {
   const [roleIdx,    setRoleIdx]    = useState(0);
   const [displayed,  setDisplayed]  = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -207,6 +208,10 @@ export default function Hero() {
   const [statsVisible, setStatsVisible] = useState(false);
   const statsRef = useRef(null);
   const timerRef = useRef(null);
+  const heroRef  = useRef(null);
+
+  // Terminal "boot" entrance — plays once the loader hands off.
+  useHeroIntro(heroRef, appReady);
 
   // Animated counters
   const projectsCount    = useCounter(3, 1600, statsVisible);
@@ -261,7 +266,7 @@ export default function Hero() {
   const scrollTo = (id) => document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
 
   return (
-    <section className="section hero" id="hero">
+    <section className="section hero" id="hero" ref={heroRef}>
       <HeroThreeCanvas />
 
       {/* Floating tool badges — decorative background layer, z-index 2,
@@ -286,25 +291,28 @@ export default function Hero() {
         {/* Left text block */}
         <div className="hero__text">
           {/* Open to Work Badge */}
-          <div className="hero__open-badge" id="open-to-work-badge">
+          <div className="hero__open-badge" id="open-to-work-badge" data-hero-in>
             <span className="open-badge__dot" />
             <span className="open-badge__text">Open to Work</span>
           </div>
 
-          <p className="hero__greeting">Hello, I'm</p>
+          <p className="hero__greeting" data-hero-in>Hello, I'm</p>
 
           <h1 className="hero__name">
-            <span className="name--white">Farhan </span>
-            <span className="name--blue">Haroon</span>
+            <span className="hero__name-text" data-hero-name>
+              <span className="name--white">Farhan </span>
+              <span className="name--blue">Haroon</span>
+            </span>
+            <span className="hero__boot-cursor" data-hero-cursor aria-hidden="true" />
           </h1>
 
-          <p className="hero__subtitle">Software and DevOps Engineer</p>
+          <p className="hero__subtitle" data-hero-in>Software and DevOps Engineer</p>
 
-          <p className="hero__value-prop">
+          <p className="hero__value-prop" data-hero-in>
             Building robust infrastructure and automating workflows to deliver reliable software solutions.
           </p>
 
-          <div className="hero__typewriter" aria-live="polite">
+          <div className="hero__typewriter" aria-live="polite" data-hero-in>
             <span className="typewriter__bracket">&gt; </span>
             <span className="typewriter__text">{displayed}</span>
             <span className={`typewriter__cursor${showCursor ? '' : ' typewriter__cursor--off'}`}>|</span>
@@ -343,7 +351,7 @@ export default function Hero() {
             </div>
           )}
 
-          <div className="hero__cta">
+          <div className="hero__cta" data-hero-in>
             <button
               className="btn hero__btn--primary"
               id="hero-view-projects-btn"
@@ -361,7 +369,7 @@ export default function Hero() {
           </div>
 
           {/* Animated Stats Counter */}
-          <div className="hero__stats" ref={statsRef} id="hero-stats">
+          <div className="hero__stats" ref={statsRef} id="hero-stats" data-hero-in>
             <div className="hero__stat">
               <span className="stat__number">{projectsCount}<span className="stat__plus">+</span></span>
               <span className="stat__label">Projects</span>
@@ -380,7 +388,7 @@ export default function Hero() {
         </div>
 
         {/* Right — Photo */}
-        <div className="hero__photo-side">
+        <div className="hero__photo-side" data-hero-in>
           <div className="hero__photo-frame" id="hero-profile-photo">
             <img src={profileImg} alt="Farhan Haroon" />
             <div className="photo__scan-line" />

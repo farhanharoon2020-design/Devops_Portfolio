@@ -115,6 +115,22 @@
   text-shadow: 0 0 25px rgba(0, 170, 255, 0.6), 0 0 60px rgba(0, 102, 255, 0.3);
 }
 
+/* Terminal boot caret that trails the name as it types in.
+   Starts hidden; the hero-intro timeline reveals + blinks it. */
+.hero__name-text { display: inline; }
+
+.hero__boot-cursor {
+  display: inline-block;
+  width: 0.5ch;
+  height: 0.82em;
+  margin-left: 0.1em;
+  vertical-align: -0.05em;
+  background: #00aaff;
+  border-radius: 1px;
+  box-shadow: 0 0 12px #00aaff, 0 0 24px rgba(0, 170, 255, 0.5);
+  opacity: 0;
+}
+
 /* Subtitle */
 .hero__subtitle {
   font-family: 'Rajdhani', sans-serif;

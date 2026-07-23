@@ -374,6 +374,71 @@ a:hover { color: var(--clr-cyan); }
 .reveal:nth-child(4) { transition-delay: 0.24s; }
 .reveal:nth-child(5) { transition-delay: 0.32s; }
 
+/* Scale variant — same fade+rise as .reveal, with a subtle scale.
+   Used for repeating card/grid elements (Skills, Projects, Blog)
+   alongside an inline per-index transition-delay for the stagger. */
+.reveal-scale {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  will-change: auto;
+}
+
+/* GSAP split-text headings start hidden so un-split text never
+   flashes before the JS reveal runs. GSAP flips visibility on. */
+.reveal-heading {
+  visibility: hidden;
+}
+
+/* Each split character is an inline-block so it can translate
+   vertically without disturbing line layout. */
+.split-char {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Gradient section titles clip their fill to text on the parent.
+   Once split, transformed characters won't inherit that painted
+   gradient, so give each character its own clipped gradient — this
+   keeps every letter visible (never transparent) while it animates. */
+.section-title .split-char {
+  background: linear-gradient(90deg, var(--clr-blue-light), var(--clr-cyan));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -- Reduced motion — honour the OS setting ------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .reveal,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .reveal-heading {
+    visibility: visible !important;
+  }
+
+  /* Kill decorative looping animations that add motion but no meaning */
+  .photo__scan-line,
+  .scroll__wheel,
+  .hero__scroll-hint,
+  .tool-badge,
+  .orbit-icon {
+    animation: none !important;
+  }
+}
+
 /* -- Container ---------------------------------------------- */
 .container {
   max-width: 1200px;

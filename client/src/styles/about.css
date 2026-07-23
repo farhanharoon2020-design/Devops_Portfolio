@@ -19,6 +19,17 @@
   margin-bottom: 2rem;
 }
 
+.about__bio p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+
+.about__bio p:last-child {
+  margin-bottom: 0;
+}
+
 .text-highlight {
   color: #00aaff;
   font-weight: 600;
@@ -52,6 +63,19 @@
   font-size: 0.95rem;
   color: #6ab0d4;
   margin-bottom: 0.5rem;
+}
+
+.edu-card__cgpa {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  color: #8ab8d4;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.edu-card__cgpa strong {
+  color: #00aaff;
+  font-weight: 700;
 }
 
 .edu-card__status {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import AnimatedHeading from './AnimatedHeading';
 import '../styles/contact.css';
 
 export default function Contact() {
@@ -61,7 +62,7 @@ export default function Contact() {
   return (
     <section className="section contact" id="contact">
       <div className="container">
-        <h2 className="section-title reveal">Contact</h2>
+        <AnimatedHeading className="section-title">Contact</AnimatedHeading>
         <p className="section-subtitle reveal">Let's build something together</p>
         <div className="section-divider" />
 

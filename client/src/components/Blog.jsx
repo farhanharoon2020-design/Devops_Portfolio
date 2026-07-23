@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AnimatedHeading from './AnimatedHeading';
 import '../styles/blog.css';
 
 function BlogModal({ post, onClose }) {
@@ -53,13 +54,14 @@ function BlogModal({ post, onClose }) {
   );
 }
 
-function BlogCard({ post, onOpen }) {
+function BlogCard({ post, onOpen, index = 0 }) {
   return (
     <div
-      className="blog-card glass-card reveal"
+      className="blog-card glass-card reveal-scale"
       onClick={() => onOpen(post)}
       onKeyDown={(e) => { if (e.key === 'Enter') onOpen(post); }}
       id={`blog-card-${post.slug}`}
+      style={{ transitionDelay: `${index * 0.08}s` }}
       role="button"
       tabIndex={0}
       aria-label={`Read ${post.title}`}
@@ -98,7 +100,7 @@ export default function Blog() {
   return (
     <section className="section blog" id="blog">
       <div className="container">
-        <h2 className="section-title reveal">Blog</h2>
+        <AnimatedHeading className="section-title">Blog</AnimatedHeading>
         <p className="section-subtitle reveal">Thoughts on DevOps, automation &amp; infrastructure</p>
         <div className="section-divider" />
 
@@ -110,8 +112,8 @@ export default function Blog() {
           </div>
         ) : (
           <div className="blog__grid">
-            {posts.map(post => (
-              <BlogCard key={post.slug} post={post} onOpen={setActive} />
+            {posts.map((post, i) => (
+              <BlogCard key={post.slug} post={post} onOpen={setActive} index={i} />
             ))}
           </div>
         )}

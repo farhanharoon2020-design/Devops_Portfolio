@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
+import AnimatedHeading from './AnimatedHeading';
+import { useParallax } from '../hooks/useGsap';
 import '../styles/projects.css';
 
 const PROJECTS = [
@@ -225,8 +227,12 @@ function ProjectModal({ project, onClose }) {
 
 
 /* ── Project Card ──────────────────────────────────────────── */
-function ProjectCard({ project, onOpen }) {
+function ProjectCard({ project, onOpen, index = 0 }) {
   const cardRef = useRef(null);
+  const iconRef = useRef(null);
+
+  // Icon drifts slower than the card body on scroll = depth.
+  useParallax(iconRef, { trigger: cardRef, distance: 18 });
 
   const handleMouseMove = (e) => {
     const card = cardRef.current;
@@ -244,20 +250,20 @@ function ProjectCard({ project, onOpen }) {
 
   return (
     <div
-      className="project-card glass-card reveal"
+      className="project-card glass-card reveal-scale"
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onClick={() => onOpen(project)}
       onKeyDown={(e) => { if (e.key === 'Enter') onOpen(project); }}
       id={`project-${project.id}`}
-      style={{ '--pc': project.color }}
+      style={{ '--pc': project.color, transitionDelay: `${index * 0.08}s` }}
       role="button"
       tabIndex={0}
       aria-label={`Open ${project.title} details`}
     >
       <div className="project-card__header">
-        <span className="project-card__icon">{project.icon}</span>
+        <span className="project-card__icon" ref={iconRef}>{project.icon}</span>
         <div className="project-card__glow-ring" />
       </div>
       <p className="project-card__subtitle">{project.subtitle}</p>
@@ -326,13 +332,13 @@ export default function Projects() {
   return (
     <section className="section projects" id="projects">
       <div className="container">
-        <h2 className="section-title reveal">Projects</h2>
+        <AnimatedHeading className="section-title">Projects</AnimatedHeading>
         <p className="section-subtitle reveal">Things I've built — click to explore</p>
         <div className="section-divider" />
 
         <div className="projects__grid">
-          {projectsWithViews.map(p => (
-            <ProjectCard key={p.id} project={p} onOpen={handleOpen} />
+          {projectsWithViews.map((p, i) => (
+            <ProjectCard key={p.id} project={p} onOpen={handleOpen} index={i} />
           ))}
         </div>
       </div>

@@ -1,14 +1,41 @@
 {
   "categories": [
     {
-      "name": "Skills & Tools",
+      "name": "Core Skills",
+      "icon": "🎯",
+      "skills": [
+        { "name": "Networking",       "icon": "🌐", "level": 85, "color": "#00aaff" },
+        { "name": "Linux",            "icon": "🐧", "level": 90, "color": "#fcc624" },
+        { "name": "Automation",       "icon": "⚙️",  "level": 85, "color": "#7c3aed" },
+        { "name": "Scripting",        "icon": "📜", "level": 88, "color": "#4eaa25" },
+        { "name": "Coding",           "icon": "👨‍💻", "level": 85, "color": "#00ffff" },
+        { "name": "Containerization", "icon": "📦", "level": 85, "color": "#2496ed" },
+        { "name": "CI/CD",            "icon": "🔄", "level": 82, "color": "#f59e0b" },
+        { "name": "Deployment",       "icon": "🚀", "level": 85, "color": "#ef4444" },
+        { "name": "Cloud",            "icon": "☁️",  "level": 80, "color": "#ff9900" }
+      ]
+    },
+    {
+      "name": "Tools & Technologies",
       "icon": "🛠️",
       "skills": [
-        { "name": "Linux",           "icon": "🐧", "level": 85, "color": "#fcc624" },
-        { "name": "Bash Scripting",  "icon": "💻", "level": 82, "color": "#4eaa25" },
-        { "name": "Git / GitHub",    "icon": "🐙", "level": 88, "color": "#f05033" },
-        { "name": "Networking",      "icon": "🌐", "level": 75, "color": "#00aaff" },
-        { "name": "Docker",          "icon": "🐳", "level": 80, "color": "#2496ed" }
+        { "name": "Linux",   "icon": "🐧", "level": 90, "color": "#fcc624" },
+        { "name": "Docker",  "icon": "🐳", "level": 88, "color": "#2496ed" },
+        { "name": "Jenkins", "icon": "🔧", "level": 80, "color": "#d33833" },
+        { "name": "AWS",     "icon": "☁️",  "level": 80, "color": "#ff9900" },
+        { "name": "Bash",    "icon": "💻", "level": 88, "color": "#4eaa25" },
+        { "name": "GitHub",  "icon": "🐙", "level": 88, "color": "#f0f6fc" }
+      ]
+    },
+    {
+      "name": "Languages",
+      "icon": "💻",
+      "skills": [
+        { "name": "Python",  "icon": "🐍", "level": 85, "color": "#3776ab" },
+        { "name": "Bash",    "icon": "💻", "level": 88, "color": "#4eaa25" },
+        { "name": "Java",    "icon": "☕",  "level": 75, "color": "#f89820" },
+        { "name": "C++",     "icon": "⚡", "level": 70, "color": "#00599c" },
+        { "name": "Groovy",  "icon": "💎", "level": 72, "color": "#4298b8" }
       ]
     }
   ]
